@@ -16,6 +16,6 @@ def main():
         pygame.display.flip()
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
-            return
+             return
 if __name__ == "__main__":
     main()
