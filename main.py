@@ -47,7 +47,7 @@ def main():
             for bullet in shots:
                 if thing.collides_with(bullet):
                     log_event("asteroid_shot")
-                    pygame.sprite.Sprite.kill(thing)
+                    thing.split()
                     pygame.sprite.Sprite.kill(bullet)
         
         for event in pygame.event.get():
